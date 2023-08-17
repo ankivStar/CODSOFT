@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my portfolio.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7954c0811.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Ankit Verma</span><br>From Lucknow, India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a passionate frontend developer with a strong inclination towards problem solving. My expertise lies in creating intuitive user interfaces and ensuring seamless user experiences. I thrive on challenges and enjoy tackling complex data structure and algorithmic questions. I actively practice on LeetCode to sharpen my problem-solving skills and continuously improve my coding abilities.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Devlopment</span><br> Landing page, websites</li>
+                            <li><span>App Devlopment</span><br>building android ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>internship</span><br>At CODESOFT</li>
+                            <li><span>Web Devlopment</span><br> built portfolio site</li>
+                            <li><span>App Devlopment</span><br>building android ios app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology</span><br>(Information Technology)<br>CGPA 7.2</li>
+                            <li><span>Intermediate</span><br>(St.Antony's Inter College) <br>84.5%</li>
+                            <li><span>High School</span><br>(St.Antony's Inter College) <br>90%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Ankit, a dedicated web designer, crafts digital experiences that blend creativity and functionality. Transforming ideas into captivating designs, I strive to elevate user engagement and create memorable online journeys.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>A skilled UI/UX designer, curates seamless digital interactions. With a passion for user-centered design, I merge aesthetics and usability to shape engaging experiences that leave a lasting impact.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>An accomplished app designer, fuses innovation and design to craft user-centric mobile solutions. Elevating functionality and aesthetics, I create intuitive experiences that resonate with users worldwide.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Welcome to my project's landing page! Through the fusion of CSS and HTML, I've woven a captivating digital experience. Explore seamless design and dynamic elements that showcase my coding expertise</p>
+                        <a href="https://ankivstar.github.io/LandingPage/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Experience my dynamic calculator project! Utilizing CSS, HTML, and JavaScript, I've created a user-friendly tool. Effortlessly perform calculations with style and functionality, showcasing my coding prowess.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Portfolio Site</h3>
+                        <p>Explore my portfolio site masterpiece! Powered by CSS, HTML, and JavaScript, it elegantly showcases my work. Seamlessly navigate projects, revealing my skillful fusion of design and coding.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------contact----------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> av542939@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/My Resume (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"></button>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------copyright--------------------- -->
+
+    <div class="copyright">
+        <p>Copyright &copy Ankit. Made with <i class="fas fa-heart"></i> </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
